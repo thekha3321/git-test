@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-antd';
+  isCollapsed = false;
+  visible = false
+  open () { 
+    this.visible = true;
+  }
+  close () {
+    this.visible = false;
+  }
 }
